@@ -1,0 +1,13 @@
+SELECT 
+p.name,
+r.name,
+c.name
+
+FROM 
+categories c INNER JOIN products p 
+ON p.id_categories = c.id 
+
+INNER JOIN providers r
+ON p.id_providers = r.id
+   
+WHERE  r.name = 'Sansul SA' AND c.name='Imported'
