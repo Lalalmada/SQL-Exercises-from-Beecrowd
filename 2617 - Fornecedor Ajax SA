@@ -1,0 +1,6 @@
+SELECT
+p.name,
+r.name
+FROM providers r INNER JOIN products p ON
+     r.id = p.id_providers
+WHERE r.name='Ajax SA'
